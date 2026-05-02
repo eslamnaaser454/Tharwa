@@ -1,0 +1,405 @@
+{
+  "nav": {
+    "features": "Features",
+    "how": "How it works",
+    "security": "Security",
+    "pricing": "Pricing",
+    "startFree": "Start Free"
+  },
+  "hero": {
+    "eyebrow": "MENA‑First · Bilingual · Halal‑aware",
+    "h1_before": "AI‑powered ",
+    "h1_underline": "finance clarity",
+    "h1_mid": " for the ",
+    "h1_accent": "Arab world",
+    "h1_after": ".",
+    "sub": "Track spending, plan your wealth, calculate Zakat, and get bilingual financial guidance — all in one secure MENA‑first platform built for how you actually live and earn.",
+    "ctaPrimary": "Start Free",
+    "ctaSecondary": "View Pricing",
+    "metaCurrencies": "Currencies · EGP SAR AED USD",
+    "metaCurrenciesValue": "4",
+    "metaLanguages": "Languages · EN · AR",
+    "metaLanguagesValue": "2",
+    "metaHalal": "Halal‑aware guidance",
+    "metaHalalValue": "100%",
+    "halalCheck": "Halal Check",
+    "halalCompliant": "Compliant",
+    "zakatEstimate": "Zakat Estimate",
+    "zakatValue": "SAR 1,247",
+    "mockUrl": "app.tharwa.finance/dashboard",
+    "balanceLabel": "Total balance · this month",
+    "balanceValue": "SAR 48,920",
+    "balanceCents": ".60",
+    "balanceDelta": "▲ 4.2% vs last month",
+    "balanceDate": "01 May 2026",
+    "asOf": "As of",
+    "spendingLabel": "Monthly spending",
+    "spendingValue": "SAR 12,840",
+    "coachName": "Tharwa Coach",
+    "coachMsg": "You’ve spent 18% less on dining this month. Want to redirect SAR 600 toward your Hajj fund?"
+  },
+  "pain": {
+    "eyebrow": "The MENA finance gap",
+    "title": "Built for a region that global apps still treat as an afterthought.",
+    "lede": "Most finance tools assume English, dollars, and a Western view of money. The Arab world deserves better — and so does your relationship with wealth.",
+    "cells": [
+      {
+        "num": "01",
+        "title": "English‑first by default",
+        "desc": "Arabic support is bolted on, translations are awkward, and RTL layouts break."
+      },
+      {
+        "num": "02",
+        "title": "No MENA banks or currencies",
+        "desc": "EGP, SAR, and AED are missing or treated as exotic. Manual entry becomes the only option."
+      },
+      {
+        "num": "03",
+        "title": "Zakat & Halal ignored",
+        "desc": "No Nisab logic. No Sharia‑aware screening. The values that shape your money are invisible."
+      },
+      {
+        "num": "04",
+        "title": "Generic, not guidance",
+        "desc": "Charts everywhere — but no coach who understands your context, your goals, your faith."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Six tools, one wealth picture",
+    "title": "Everything a young MENA professional needs to take their finances seriously.",
+    "lede": "From your first salary tracking to your first investment screening — Tharwa stays bilingual, contextual, and quietly smart.",
+    "items": [
+      {
+        "title": "AI Financial Coach",
+        "desc": "Ask questions about budgeting, debt, saving, and goals — in Arabic or English, with answers that understand your context.",
+        "tag": "EN · AR · contextual",
+        "icon": "MessageSquareText"
+      },
+      {
+        "title": "Smart Expense Tracking",
+        "desc": "Understand where your money goes through manual entries, CSV import, and — soon — direct bank linking across MENA.",
+        "tag": "manual · csv · open banking soon",
+        "icon": "TrendingUp"
+      },
+      {
+        "title": "Zakat Calculator",
+        "desc": "Estimate your Zakat with live Nisab values, transparent calculations, and clear explanations of every figure.",
+        "tag": "live nisab · transparent",
+        "icon": "Clock"
+      },
+      {
+        "title": "Halal Wealth Guidance",
+        "desc": "Build riba‑free habits and discover Sharia‑aware investment categories with plain‑language reasoning.",
+        "tag": "riba‑free · sharia‑aware",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Wealth Roadmaps",
+        "desc": "Plan for emergency funds, Hajj, marriage, home deposits, retirement, and family — with milestones that actually move.",
+        "tag": "emergency · hajj · home · retirement",
+        "icon": "Eye"
+      },
+      {
+        "title": "Multi‑Currency Dashboard",
+        "desc": "View EGP, SAR, AED, and USD in one unified financial picture — converted live, summarized clearly.",
+        "tag": "EGP · SAR · AED · USD",
+        "icon": "Globe"
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How Tharwa works",
+    "title": "Three calm steps from chaos to clarity.",
+    "lede": "No spreadsheets. No bank gymnastics. Just a guided path from where you are today to the wealth you want to build.",
+    "steps": [
+      {
+        "num": "STEP 01",
+        "title": "Connect or add your finances",
+        "desc": "Start with manual entry, CSV import, or — where supported — link an account. Your data, your pace."
+      },
+      {
+        "num": "STEP 02",
+        "title": "Get AI‑powered insights",
+        "desc": "Tharwa Coach surfaces patterns, asks the right questions, and suggests bilingual moves you can actually take."
+      },
+      {
+        "num": "STEP 03",
+        "title": "Follow your wealth roadmap",
+        "desc": "Track milestones across emergency, Hajj, home, marriage, and retirement — with progress that compounds."
+      }
+    ]
+  },
+  "preview": {
+    "eyebrow": "A peek inside",
+    "title": "The dashboard, the way you’d actually use it.",
+    "lede": "Charts, coach, Zakat, and goals — designed to feel calm, not crowded. Switch between four currencies. Read it right‑to‑left when you want.",
+    "greeting": "Good morning, Noor",
+    "dashTitle": "Your wealth, this month",
+    "income": "Income",
+    "incomeVal": "18,500",
+    "incomeD": "▲ on track",
+    "spending": "Spending",
+    "spendingVal": "12,840",
+    "spendingD": "▼ 18% dining",
+    "saved": "Saved",
+    "savedVal": "5,660",
+    "savedD": "▲ +SAR 1,260",
+    "chartTitle": "Income vs spending",
+    "spendingLegend": "Spending",
+    "incomeLegend": "Income",
+    "topCats": "Top categories",
+    "zakatYear": "ZAKAT · 1447 H",
+    "zakatDue": "Estimated due",
+    "zakatFigure": "SAR 1,247",
+    "zakatMeta": "2.5% on eligible holdings above Nisab",
+    "nisabLabel": "Nisab · SAR 23,400",
+    "eligibleLabel": "Eligible · SAR 49,890",
+    "goalsTitle": "Wealth goals",
+    "halalTitle": "Halal Check · Compliant",
+    "halalSub": "Portfolio screened — no riba exposure",
+    "coachTitle": "Coach",
+    "userMsg": "How much can I save toward Hajj this year?",
+    "botMsg": "At your current rate, ~SAR 14,400. Trim dining by 20% and you’d reach 18,000 — enough to cover travel.",
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "spending": "Spending",
+      "zakat": "Zakat",
+      "halalScreener": "Halal screener",
+      "goals": "Goals",
+      "aiCoach": "AI Coach",
+      "settings": "Settings",
+      "workspace": "Workspace",
+      "tools": "Tools",
+      "userName": "Noor Hassan",
+      "userLocation": "Riyadh · Plus"
+    },
+    "categories": [
+      { "name": "Groceries", "amount": "2,340", "pct": 78 },
+      { "name": "Transport", "amount": "1,860", "pct": 62 },
+      { "name": "Dining", "amount": "1,260", "pct": 42 },
+      { "name": "Family", "amount": "1,650", "pct": 55 }
+    ],
+    "goals": [
+      { "name": "Emergency fund", "pct": 82 },
+      { "name": "Hajj 2028", "pct": 38 },
+      { "name": "Home deposit", "pct": 14 }
+    ]
+  },
+  "diff": {
+    "eyebrow": "Why Tharwa",
+    "title": "Side by side, the difference is unmistakable.",
+    "lede": "Western budgeting apps weren’t built for Riyadh, Cairo, or Dubai. Local fintech apps weren’t built around guidance. Tharwa is the only one that’s both.",
+    "colTharwa": "Tharwa",
+    "colWestern": "Western apps",
+    "colLocal": "Local fintech",
+    "rows": [
+      {
+        "label": "Arabic‑first experience",
+        "tharwa": "Native",
+        "western": "Translated",
+        "local": "Partial",
+        "tharwaStatus": "check",
+        "westernStatus": "cross",
+        "localStatus": "partial"
+      },
+      {
+        "label": "AI financial coach",
+        "tharwa": "Bilingual",
+        "western": "English only",
+        "local": "Not offered",
+        "tharwaStatus": "check",
+        "westernStatus": "partial",
+        "localStatus": "cross"
+      },
+      {
+        "label": "Zakat support",
+        "tharwa": "Live Nisab",
+        "western": "None",
+        "local": "Basic",
+        "tharwaStatus": "check",
+        "westernStatus": "cross",
+        "localStatus": "partial"
+      },
+      {
+        "label": "Halal finance guidance",
+        "tharwa": "Built‑in",
+        "western": "Absent",
+        "local": "Absent",
+        "tharwaStatus": "check",
+        "westernStatus": "cross",
+        "localStatus": "cross"
+      },
+      {
+        "label": "MENA currencies (EGP, SAR, AED)",
+        "tharwa": "All four",
+        "western": "USD‑first",
+        "local": "Country‑locked",
+        "tharwaStatus": "check",
+        "westernStatus": "partial",
+        "localStatus": "partial"
+      },
+      {
+        "label": "Wealth roadmaps",
+        "tharwa": "Hajj, home, family",
+        "western": "Generic goals",
+        "local": "Not offered",
+        "tharwaStatus": "check",
+        "westernStatus": "partial",
+        "localStatus": "cross"
+      }
+    ]
+  },
+  "security": {
+    "eyebrow": "Security & trust",
+    "title": "A finance product is only as good as the trust behind it.",
+    "lede": "We’re building Tharwa with the same care a serious bank would expect — and the transparency users actually deserve.",
+    "cards": [
+      {
+        "title": "Secure authentication",
+        "desc": "Industry‑standard authentication, encrypted sessions, and optional biometric unlock on supported devices. Your access stays yours.",
+        "icon": "Lock"
+      },
+      {
+        "title": "Privacy‑first data handling",
+        "desc": "Financial data is encrypted in transit and at rest. We don’t sell your data, and you can export or delete everything at any time.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Clear AI disclaimer",
+        "desc": "Tharwa Coach offers educational guidance, not guaranteed investment advice. Every suggestion is explained — and reversible.",
+        "icon": "AlertCircle"
+      },
+      {
+        "title": "Regulated open banking",
+        "desc": "Future bank integrations will go through regulated open‑banking providers across MENA — never through screen‑scraping or password sharing.",
+        "icon": "Activity"
+      }
+    ],
+    "disclaimer": "Tharwa provides educational financial guidance and Halal awareness — it is not a substitute for professional investment, tax, or Sharia advice. Always consult a qualified specialist for material decisions.",
+    "disclaimerLabel": "A note on guidance."
+  },
+  "proof": {
+    "eyebrow": "Built for the region",
+    "title": "An Arabic‑first finance experience, designed where it’s needed most.",
+    "stats": [
+      { "eyebrow": "Built for", "value": "MENA professionals, 22–40 years old" },
+      { "eyebrow": "Designed for", "value": "Egypt · Saudi Arabia · United Arab Emirates" },
+      { "eyebrow": "Native to", "value": "Arabic and English, side by side" }
+    ],
+    "testimonials": [
+      {
+        "quote": "Finally, a budgeting tool that understands Zakat and Arabic without making either feel like an afterthought.",
+        "name": "Layla A.",
+        "role": "Marketing Lead · Cairo",
+        "initial": "L"
+      },
+      {
+        "quote": "Tharwa helped me see my monthly spending clearly for the first time — and the coach actually speaks my language.",
+        "name": "Khalid R.",
+        "role": "Software Engineer · Riyadh",
+        "initial": "K"
+      },
+      {
+        "quote": "The Halal screener is the reason I’m finally investing instead of just thinking about it.",
+        "name": "Mariam S.",
+        "role": "Product Designer · Dubai",
+        "initial": "M"
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Start free. Upgrade when you’re ready to compound.",
+    "lede": "Every plan includes Arabic and English, the Zakat calculator, and access to Tharwa Coach. Localized pricing for Egypt comes standard.",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save": "save 35%",
+    "tiers": [
+      {
+        "name": "Free",
+        "desc": "For getting your first clear picture.",
+        "price": "$0",
+        "period": "/forever",
+        "billing": "No card required",
+        "cta": "Start Free",
+        "featured": false,
+        "flag": "",
+        "features": [
+          "Manual budgeting & CSV import",
+          "Zakat calculator with live Nisab",
+          "Basic charts & monthly reports",
+          "10 AI coach messages / month"
+        ]
+      },
+      {
+        "name": "Tharwa Plus",
+        "desc": "For young professionals serious about wealth.",
+        "price": "$4.99",
+        "period": "/mo · or $39/yr",
+        "billing": "Cancel anytime",
+        "cta": "Upgrade to Plus",
+        "featured": true,
+        "recommended": "Recommended",
+        "flag": "",
+        "features": [
+          "Unlimited AI coach conversations",
+          "Automated bank linking (where available)",
+          "Multi‑account aggregation",
+          "Wealth roadmap with milestones"
+        ]
+      },
+      {
+        "name": "Tharwa Pro",
+        "desc": "For families and committed wealth builders.",
+        "price": "$9.99",
+        "period": "/mo · or $79/yr",
+        "billing": "Cancel anytime",
+        "cta": "Go Pro",
+        "featured": false,
+        "flag": "",
+        "features": [
+          "Everything in Plus",
+          "Sharia investment screener",
+          "Family sharing for up to 4 members",
+          "Advanced reporting & priority support"
+        ]
+      },
+      {
+        "name": "Egypt‑Local Plus",
+        "desc": "Plus benefits, priced for Egyptian purchasing power.",
+        "price": "EGP 99",
+        "period": "/mo",
+        "billing": "≈ $2.00 / month",
+        "cta": "Choose Local",
+        "featured": false,
+        "flag": "EGYPT · LOCAL",
+        "features": [
+          "All Plus features",
+          "EGP‑native tracking & reporting",
+          "Local payment methods",
+          "Egypt‑aware coach context"
+        ]
+      }
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Wealth Redefined",
+    "h2_before": "Build wealth with ",
+    "h2_accent": "clarity",
+    "h2_after": ", confidence, and values.",
+    "lede": "Your wealth, in your language. Start with the free plan — upgrade only when Tharwa earns it.",
+    "cta": "Start Your Free Plan",
+    "tags": ["Bilingual", "Halal‑aware", "MENA‑first", "No card required"]
+  },
+  "footer": {
+    "tagline": "Wealth Redefined. An AI‑powered, Arabic‑first finance analyst built for the MENA region.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "productLinks": ["Features", "How it works", "Pricing", "Security"],
+    "companyLinks": ["About", "Blog", "Careers", "Press"],
+    "legalLinks": ["Privacy", "Terms", "AI disclaimer", "Sharia notice"],
+    "copyright": "© 2026 Tharwa. Educational guidance, not investment advice."
+  }
+}
