@@ -26,25 +26,25 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="bg-off py-[110px] max-[760px]:py-20"
+      className="bg-off py-[110px] transition-colors duration-300 dark:bg-navy-900 max-[760px]:py-20"
       aria-labelledby="pricing-title"
     >
       <div className="mx-auto max-w-[1200px] px-7">
         <Reveal className="mx-auto mb-16 max-w-[760px] text-center">
-          <span className="mb-4 inline-block font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-gold-deep">
+          <span className="mb-4 inline-block font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-gold-deep dark:text-gold">
             {t("eyebrow")}
           </span>
-          <h2 id="pricing-title" className="font-display text-[clamp(34px,4.4vw,56px)] font-medium leading-[1.08] tracking-tight text-ink">
+          <h2 id="pricing-title" className="font-display text-[clamp(34px,4.4vw,56px)] font-medium leading-[1.08] tracking-tight text-ink dark:text-[#F1E8D6]">
             {t("title")}
           </h2>
-          <p className="mx-auto mt-[18px] max-w-[62ch] text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-[18px] max-w-[62ch] text-lg leading-relaxed text-muted dark:text-[#B7C2CE]">
             {t("lede")}
           </p>
         </Reveal>
 
         <Reveal delay={1} className="mb-12 flex justify-center">
           <div
-            className="inline-flex gap-1 rounded-full border border-line bg-white p-1"
+            className="inline-flex gap-1 rounded-full border border-line bg-white p-1 transition-colors duration-300 dark:border-line-dark dark:bg-navy-800"
             role="tablist"
           >
             <button
@@ -52,8 +52,8 @@ export default function Pricing() {
               onClick={() => setIsMonthly(true)}
               className={`rounded-full px-[18px] py-2 text-[13px] font-medium transition-all ${
                 isMonthly
-                  ? "bg-navy-800 text-gold"
-                  : "text-muted"
+                  ? "bg-navy-800 text-gold dark:bg-gold dark:text-navy-900"
+                  : "text-muted dark:text-[#A4B0BC]"
               }`}
             >
               {t("monthly")}
@@ -63,8 +63,8 @@ export default function Pricing() {
               onClick={() => setIsMonthly(false)}
               className={`rounded-full px-[18px] py-2 text-[13px] font-medium transition-all ${
                 !isMonthly
-                  ? "bg-navy-800 text-gold"
-                  : "text-muted"
+                  ? "bg-navy-800 text-gold dark:bg-gold dark:text-navy-900"
+                  : "text-muted dark:text-[#A4B0BC]"
               }`}
             >
               {t("annual")}{" "}
@@ -82,7 +82,7 @@ export default function Pricing() {
                 className={`relative flex flex-col gap-4 rounded-lg border p-[30px_26px_26px] transition-all hover:-translate-y-1 hover:shadow-md-soft ${
                   tier.featured
                     ? "border-gold bg-navy-800 text-[#E5DBC4] shadow-[0_30px_70px_-30px_rgba(11,34,51,0.35),inset_0_0_0_1px_var(--gold)]"
-                    : "border-line bg-white"
+                    : "border-line bg-white dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)]"
                 }`}
               >
                 {tier.recommended && (
@@ -95,19 +95,19 @@ export default function Pricing() {
                     {tier.flag}
                   </span>
                 )}
-                <h3 className={`font-display text-xl font-semibold ${tier.featured ? "text-[#F4EBD8]" : "text-ink"}`}>
+                <h3 className={`font-display text-xl font-semibold ${tier.featured ? "text-[#F4EBD8]" : "text-ink dark:text-[#F1E8D6]"}`}>
                   {tier.name}
                 </h3>
-                <p className={`text-[13px] leading-snug ${tier.featured ? "text-[#A4B0BC]" : "text-muted"}`}>
+                <p className={`text-[13px] leading-snug ${tier.featured ? "text-[#A4B0BC]" : "text-muted dark:text-[#A4B0BC]"}`}>
                   {tier.desc}
                 </p>
-                <div className={`font-display text-[42px] font-semibold leading-none tracking-[-0.015em] ${tier.featured ? "text-gold" : "text-ink"}`}>
+                <div className={`font-display text-[42px] font-semibold leading-none tracking-[-0.015em] ${tier.featured ? "text-gold" : "text-ink dark:text-gold"}`}>
                   {tier.price}
-                  <small className={`font-sans text-sm font-medium ${tier.featured ? "text-[#A4B0BC]" : "text-muted"}`}>
+                  <small className={`font-sans text-sm font-medium ${tier.featured ? "text-[#A4B0BC]" : "text-muted dark:text-[#A4B0BC]"}`}>
                     {" "}{tier.period}
                   </small>
                 </div>
-                <div className={`text-xs ${tier.featured ? "text-[#A4B0BC]" : "text-muted"}`}>
+                <div className={`text-xs ${tier.featured ? "text-[#A4B0BC]" : "text-muted dark:text-[#A4B0BC]"}`}>
                   {tier.billing}
                 </div>
                 <ul className="mt-2 flex flex-col gap-[9px]">
@@ -115,12 +115,12 @@ export default function Pricing() {
                     <li
                       key={fi}
                       className={`flex items-start gap-2 text-[13.5px] leading-[1.45] ${
-                        tier.featured ? "text-[#C7D0DA]" : "text-text"
+                        tier.featured ? "text-[#C7D0DA]" : "text-text dark:text-[#C7D0DA]"
                       }`}
                     >
                       <Check
                         className={`mt-0.5 h-3.5 w-3.5 flex-shrink-0 ${
-                          tier.featured ? "text-gold" : "text-gold-deep"
+                          tier.featured ? "text-gold" : "text-gold-deep dark:text-gold"
                         }`}
                         strokeWidth={2.4}
                       />

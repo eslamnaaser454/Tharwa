@@ -15,28 +15,28 @@ export default function SocialProof() {
   }>;
 
   return (
-    <section className="bg-paper py-[110px] max-[760px]:py-20" aria-labelledby="proof-title">
+    <section className="bg-paper py-[110px] transition-colors duration-300 dark:bg-navy-800 max-[760px]:py-20" aria-labelledby="proof-title">
       <div className="mx-auto max-w-[1200px] px-7">
         <Reveal className="mx-auto mb-16 max-w-[760px] text-center">
-          <span className="mb-4 inline-block font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-gold-deep">
+          <span className="mb-4 inline-block font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-gold-deep dark:text-gold">
             {t("eyebrow")}
           </span>
-          <h2 id="proof-title" className="font-display text-[clamp(34px,4.4vw,56px)] font-medium leading-[1.08] tracking-tight text-ink">
+          <h2 id="proof-title" className="font-display text-[clamp(34px,4.4vw,56px)] font-medium leading-[1.08] tracking-tight text-ink dark:text-[#F1E8D6]">
             {t("title")}
           </h2>
         </Reveal>
 
         <Reveal delay={1}>
-          <div className="mb-12 grid overflow-hidden rounded-lg border border-line bg-white max-[760px]:grid-cols-1 min-[760px]:grid-cols-3">
+          <div className="mb-12 grid overflow-hidden rounded-lg border border-line bg-white transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)] max-[760px]:grid-cols-1 min-[760px]:grid-cols-3">
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className="border-b border-line p-[32px_28px] last:border-b-0 min-[760px]:border-b-0 min-[760px]:border-e min-[760px]:last:border-e-0"
+                className="border-b border-line p-[32px_28px] transition-colors duration-300 last:border-b-0 dark:border-line-dark min-[760px]:border-b-0 min-[760px]:border-e min-[760px]:last:border-e-0"
               >
-                <div className="font-mono text-[11px] uppercase tracking-[0.1em] text-gold-deep">
+                <div className="font-mono text-[11px] uppercase tracking-[0.1em] text-gold-deep dark:text-gold">
                   {stat.eyebrow}
                 </div>
-                <div className="mt-2 font-display text-[28px] font-semibold leading-[1.15] tracking-tight text-ink">
+                <div className="mt-2 font-display text-[28px] font-semibold leading-[1.15] tracking-tight text-ink dark:text-[#F1E8D6]">
                   {stat.value}
                 </div>
               </div>
@@ -48,13 +48,13 @@ export default function SocialProof() {
           {testimonials.map((item, i) => (
             <Reveal key={i} delay={i}>
               <TiltCard
-                className={`flex flex-col gap-[18px] rounded-lg border border-line bg-white p-[28px_26px] ${
+                className={`flex flex-col gap-[18px] rounded-lg border border-line bg-white p-[28px_26px] transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)] ${
                   i === testimonials.length - 1
                     ? "max-[1100px]:col-span-full min-[1100px]:col-auto"
                     : ""
                 }`}
               >
-                <blockquote className="font-display text-[21px] font-medium leading-[1.35] tracking-tight text-ink before:me-0.5 before:text-4xl before:leading-none before:text-gold before:content-['“']">
+                <blockquote className="font-display text-[21px] font-medium leading-[1.35] tracking-tight text-ink before:me-0.5 before:text-4xl before:leading-none before:text-gold before:content-['\u201C'] dark:text-[#F1E8D6]">
                   {item.quote}
                 </blockquote>
                 <div className="mt-auto flex items-center gap-3">
@@ -62,10 +62,10 @@ export default function SocialProof() {
                     {item.initial}
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-ink">
+                    <div className="text-sm font-medium text-ink dark:text-[#F1E8D6]">
                       {item.name}
                     </div>
-                    <div className="text-xs text-muted">{item.role}</div>
+                    <div className="text-xs text-muted dark:text-[#A4B0BC]">{item.role}</div>
                   </div>
                 </div>
               </TiltCard>

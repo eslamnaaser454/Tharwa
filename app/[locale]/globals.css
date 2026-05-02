@@ -10,6 +10,17 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
+  /* Smooth theme transitions for all major containers */
+  section,
+  header,
+  footer,
+  main,
+  aside,
+  div {
+    transition-property: background-color, border-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
 }
 
 @layer components {

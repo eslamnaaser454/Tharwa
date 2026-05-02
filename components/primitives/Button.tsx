@@ -21,7 +21,7 @@ const variantStyles: Record<Variant, string> = {
   "ghost-dark":
     "bg-transparent text-[#F1E8D6] border-line-dark hover:border-gold hover:text-gold",
   "ghost-light":
-    "bg-transparent text-ink border-line hover:bg-paper-2",
+    "bg-transparent text-ink border-line hover:bg-paper-2 dark:text-[#F1E8D6] dark:border-line-dark dark:hover:border-gold dark:hover:text-gold dark:hover:bg-transparent",
 };
 
 export default function Button({

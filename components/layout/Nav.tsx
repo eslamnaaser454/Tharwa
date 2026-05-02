@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Logo from "@/components/primitives/Logo";
 import LangToggle from "@/components/primitives/LangToggle";
+import ThemeToggle from "@/components/primitives/ThemeToggle";
 import Button from "@/components/primitives/Button";
 
 export default function Nav() {
@@ -40,6 +41,7 @@ export default function Nav() {
         </nav>
 
         <div className="flex items-center gap-2.5">
+          <ThemeToggle />
           <LangToggle />
           <Button variant="primary" href="#pricing">
             {t("startFree")}

@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/lib/i18n";
+import ThemeProvider from "@/components/primitives/ThemeProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -57,12 +58,21 @@ export default async function LocaleLayout({
       className={`${inter.variable} ${cormorant.variable} ${jetbrains.variable} ${tajawal.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('tharwa-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body
-        className={`bg-off text-text antialiased ${isAr ? "font-arabic" : "font-sans"} text-base leading-relaxed`}
+        className={`bg-off text-text antialiased transition-colors duration-300 dark:bg-navy-900 dark:text-[#C7D0DA] ${isAr ? "font-arabic" : "font-sans"} text-base leading-relaxed`}
       >
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

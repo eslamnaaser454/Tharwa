@@ -26,15 +26,15 @@ export default function DashboardPreview() {
   const ccyList = ["SAR", "AED", "EGP", "USD"];
 
   return (
-    <div className="rounded-3xl border border-line bg-gradient-to-b from-white to-paper p-8 shadow-md-soft max-[760px]:p-[18px]">
+    <div className="rounded-3xl border border-line bg-gradient-to-b from-white to-paper p-8 shadow-md-soft transition-colors duration-300 dark:border-line-dark dark:from-navy-800 dark:to-navy-900 max-[760px]:p-[18px]">
       <div className="grid min-h-[560px] gap-[18px] max-[760px]:grid-cols-1 max-[1100px]:grid-cols-[1fr_1fr] min-[1100px]:grid-cols-[280px_1fr_320px]">
         {/* Sidebar */}
-        <aside className="hidden flex-col gap-2.5 rounded-lg border border-line bg-white p-[18px_16px] min-[1100px]:flex">
-          <div className="flex items-center gap-2 border-b border-line px-1 pb-3.5 pt-1.5">
+        <aside className="hidden flex-col gap-2.5 rounded-lg border border-line bg-white p-[18px_16px] transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)] min-[1100px]:flex">
+          <div className="flex items-center gap-2 border-b border-line px-1 pb-3.5 pt-1.5 dark:border-line-dark">
             <Logo />
-            <span className="font-display text-lg font-semibold tracking-tight text-ink">Tharwa</span>
+            <span className="font-display text-lg font-semibold tracking-tight text-ink dark:text-[#F1E8D6]">Tharwa</span>
           </div>
-          <div className="px-1 pt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted">{t("sidebar.workspace")}</div>
+          <div className="px-1 pt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted dark:text-[#A4B0BC]">{t("sidebar.workspace")}</div>
           {sidebarKeys.slice(0, sectionBreak).map((key, i) => {
             const Icon = sidebarIcons[i];
             return (
@@ -43,7 +43,7 @@ export default function DashboardPreview() {
                 className={`flex items-center gap-2.5 rounded-sm px-2.5 py-[9px] text-[13.5px] font-[450] transition-all ${
                   i === 0
                     ? "bg-gold-tint font-medium text-gold-deep"
-                    : "text-text hover:bg-paper-2 hover:ps-3.5"
+                    : "text-text hover:bg-paper-2 hover:ps-3.5 dark:text-[#C7D0DA] dark:hover:bg-navy-700"
                 }`}
                 data-cursor-hover
               >
@@ -52,13 +52,13 @@ export default function DashboardPreview() {
               </div>
             );
           })}
-          <div className="px-1 pt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted">{t("sidebar.tools")}</div>
+          <div className="px-1 pt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted dark:text-[#A4B0BC]">{t("sidebar.tools")}</div>
           {sidebarKeys.slice(sectionBreak).map((key, i) => {
             const Icon = sidebarIcons[sectionBreak + i];
             return (
               <div
                 key={key}
-                className="flex items-center gap-2.5 rounded-sm px-2.5 py-[9px] text-[13.5px] font-[450] text-text transition-all hover:bg-paper-2 hover:ps-3.5"
+                className="flex items-center gap-2.5 rounded-sm px-2.5 py-[9px] text-[13.5px] font-[450] text-text transition-all hover:bg-paper-2 hover:ps-3.5 dark:text-[#C7D0DA] dark:hover:bg-navy-700"
                 data-cursor-hover
               >
                 <Icon className="h-4 w-4 opacity-85" strokeWidth={1.8} />
@@ -66,33 +66,33 @@ export default function DashboardPreview() {
               </div>
             );
           })}
-          <div className="mt-auto flex items-center gap-2.5 rounded-[10px] border border-line bg-paper p-2.5">
+          <div className="mt-auto flex items-center gap-2.5 rounded-[10px] border border-line bg-paper p-2.5 transition-colors duration-300 dark:border-line-dark dark:bg-navy-800">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-navy-700 to-navy-800 font-display text-sm font-semibold text-gold">
               N
             </div>
             <div>
-              <div className="text-[13px] font-medium text-ink">{t("sidebar.userName")}</div>
-              <div className="text-[11px] text-muted">{t("sidebar.userLocation")}</div>
+              <div className="text-[13px] font-medium text-ink dark:text-[#F1E8D6]">{t("sidebar.userName")}</div>
+              <div className="text-[11px] text-muted dark:text-[#A4B0BC]">{t("sidebar.userLocation")}</div>
             </div>
           </div>
         </aside>
 
         {/* Main */}
-        <main className="flex flex-col gap-[18px] rounded-lg border border-line bg-white p-[22px]">
+        <main className="flex flex-col gap-[18px] rounded-lg border border-line bg-white p-[22px] transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)]">
           <div className="flex items-center justify-between">
             <div>
-              <div className="text-xs uppercase tracking-[0.04em] text-muted">{t("greeting")}</div>
-              <div className="font-display text-2xl font-semibold tracking-tight text-ink">{t("dashTitle")}</div>
+              <div className="text-xs uppercase tracking-[0.04em] text-muted dark:text-[#A4B0BC]">{t("greeting")}</div>
+              <div className="font-display text-2xl font-semibold tracking-tight text-ink dark:text-[#F1E8D6]">{t("dashTitle")}</div>
             </div>
-            <div className="flex gap-1 rounded-sm bg-paper-2 p-[3px]">
+            <div className="flex gap-1 rounded-sm bg-paper-2 p-[3px] dark:bg-navy-700">
               {ccyList.map((ccy, i) => (
                 <span
                   key={ccy}
                   onClick={() => setActiveCcy(i)}
                   className={`rounded-md px-[9px] py-[5px] font-mono text-[11px] transition-colors ${
                     i === activeCcy
-                      ? "bg-white font-medium text-ink shadow-sm-soft"
-                      : "text-muted hover:text-ink"
+                      ? "bg-white font-medium text-ink shadow-sm-soft dark:bg-navy-800 dark:text-gold"
+                      : "text-muted hover:text-ink dark:text-[#A4B0BC] dark:hover:text-gold"
                   }`}
                   data-cursor-hover
                   role="button"
@@ -112,25 +112,25 @@ export default function DashboardPreview() {
           </div>
 
           {/* Chart */}
-          <div className="flex flex-1 flex-col gap-3 rounded-md border border-line bg-gradient-to-b from-white to-paper p-[18px]">
+          <div className="flex flex-1 flex-col gap-3 rounded-md border border-line bg-gradient-to-b from-white to-paper p-[18px] transition-colors duration-300 dark:border-line-dark dark:from-[rgba(255,255,255,0.02)] dark:to-navy-800">
             <div className="flex items-center justify-between">
-              <div className="font-display text-lg font-semibold text-ink">{t("chartTitle")}</div>
-              <div className="flex gap-3 text-[11px] text-muted">
+              <div className="font-display text-lg font-semibold text-ink dark:text-[#F1E8D6]">{t("chartTitle")}</div>
+              <div className="flex gap-3 text-[11px] text-muted dark:text-[#A4B0BC]">
                 <span className="flex items-center gap-1.5"><i className="inline-block h-2 w-2 rounded-[2px] bg-navy-700" />{t("spendingLegend")}</span>
                 <span className="flex items-center gap-1.5"><i className="inline-block h-2 w-2 rounded-[2px] bg-gold" />{t("incomeLegend")}</span>
               </div>
             </div>
             <IncomeVsSpendingChart />
-            <div className="border-t border-line pt-3.5">
-              <div className="mb-2.5 font-display text-[15px] font-semibold text-ink">{t("topCats")}</div>
+            <div className="border-t border-line pt-3.5 dark:border-line-dark">
+              <div className="mb-2.5 font-display text-[15px] font-semibold text-ink dark:text-[#F1E8D6]">{t("topCats")}</div>
               <div className="grid grid-cols-2 gap-2.5 max-[760px]:grid-cols-1">
                 {categories.map((cat) => (
                   <div key={cat.name} className="flex items-center gap-2.5 text-[13px]">
-                    <span className="w-[90px] font-medium text-text">{cat.name}</span>
-                    <div className="flex-1 overflow-hidden rounded-[3px] bg-paper-2" style={{ height: 6 }}>
+                    <span className="w-[90px] font-medium text-text dark:text-[#C7D0DA]">{cat.name}</span>
+                    <div className="flex-1 overflow-hidden rounded-[3px] bg-paper-2 dark:bg-navy-700" style={{ height: 6 }}>
                       <div className="h-full rounded-[3px] bg-gold" style={{ width: `${cat.pct}%` }} />
                     </div>
-                    <span className="w-[60px] text-end font-mono text-[11px] text-muted">{cat.amount}</span>
+                    <span className="w-[60px] text-end font-mono text-[11px] text-muted dark:text-[#A4B0BC]">{cat.amount}</span>
                   </div>
                 ))}
               </div>
@@ -161,16 +161,16 @@ export default function DashboardPreview() {
           </div>
 
           {/* Goals */}
-          <div className="group rounded-lg border border-line bg-white p-[18px]">
-            <h4 className="mb-2 font-display text-lg font-semibold text-ink">{t("goalsTitle")}</h4>
+          <div className="group rounded-lg border border-line bg-white p-[18px] transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)]">
+            <h4 className="mb-2 font-display text-lg font-semibold text-ink dark:text-[#F1E8D6]">{t("goalsTitle")}</h4>
             <div className="mt-1.5 flex flex-col gap-3">
               {goals.map((goal) => (
                 <div key={goal.name} className="flex flex-col gap-1.5">
                   <div className="flex justify-between text-[13px]">
-                    <span className="font-medium text-text">{goal.name}</span>
-                    <span className="font-mono text-[11px] text-gold-deep">{goal.pct}%</span>
+                    <span className="font-medium text-text dark:text-[#C7D0DA]">{goal.name}</span>
+                    <span className="font-mono text-[11px] text-gold-deep dark:text-gold">{goal.pct}%</span>
                   </div>
-                  <div className="h-1 overflow-hidden rounded-sm bg-paper-2">
+                  <div className="h-1 overflow-hidden rounded-sm bg-paper-2 dark:bg-navy-700">
                     <div className="goal-bar-fill h-full rounded-sm bg-gradient-to-r from-gold to-gold-deep" style={{ width: `${goal.pct}%` }} />
                   </div>
                 </div>
@@ -184,21 +184,21 @@ export default function DashboardPreview() {
               ✓
             </div>
             <div>
-              <div className="font-semibold text-ink">{t("halalTitle")}</div>
-              <div className="text-[11px] text-muted">{t("halalSub")}</div>
+              <div className="font-semibold text-ink dark:text-[#F1E8D6]">{t("halalTitle")}</div>
+              <div className="text-[11px] text-muted dark:text-[#A4B0BC]">{t("halalSub")}</div>
             </div>
           </div>
 
           {/* Chat */}
-          <div className="flex flex-col gap-2.5 rounded-lg border border-line bg-white p-[18px]">
-            <div className="mb-1 font-display text-base font-semibold text-ink">{t("coachTitle")}</div>
+          <div className="flex flex-col gap-2.5 rounded-lg border border-line bg-white p-[18px] transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)]">
+            <div className="mb-1 font-display text-base font-semibold text-ink dark:text-[#F1E8D6]">{t("coachTitle")}</div>
             <div className="flex items-start gap-2 text-[13px] leading-snug">
-              <div className="flex h-[26px] w-[26px] flex-shrink-0 items-center justify-center rounded-[7px] bg-paper-2 font-display text-[13px] font-bold text-ink">N</div>
-              <div className="flex-1 rounded-[10px] border border-line bg-white px-[11px] py-2">{t("userMsg")}</div>
+              <div className="flex h-[26px] w-[26px] flex-shrink-0 items-center justify-center rounded-[7px] bg-paper-2 font-display text-[13px] font-bold text-ink dark:bg-navy-700 dark:text-[#F1E8D6]">N</div>
+              <div className="flex-1 rounded-[10px] border border-line bg-white px-[11px] py-2 dark:border-line-dark dark:bg-navy-800 dark:text-[#C7D0DA]">{t("userMsg")}</div>
             </div>
             <div className="flex items-start gap-2 text-[13px] leading-snug">
               <div className="flex h-[26px] w-[26px] flex-shrink-0 items-center justify-center rounded-[7px] bg-gradient-to-br from-gold to-gold-deep font-display text-[13px] font-bold text-navy-900">T</div>
-              <div className="flex-1 rounded-[10px] border border-line bg-paper px-[11px] py-2">{t("botMsg")}</div>
+              <div className="flex-1 rounded-[10px] border border-line bg-paper px-[11px] py-2 dark:border-line-dark dark:bg-navy-700 dark:text-[#C7D0DA]">{t("botMsg")}</div>
             </div>
           </div>
         </div>
@@ -209,9 +209,9 @@ export default function DashboardPreview() {
 
 function StatCard({ label, value, delta, up }: { label: string; value: string; delta: string; up: boolean }) {
   return (
-    <div className="rounded-md border border-line bg-paper p-3.5">
-      <div className="text-[11px] uppercase tracking-[0.06em] text-muted">{label}</div>
-      <div className="mt-0.5 font-display text-[22px] font-semibold text-ink">{value}</div>
+    <div className="rounded-md border border-line bg-paper p-3.5 transition-colors duration-300 dark:border-line-dark dark:bg-navy-800">
+      <div className="text-[11px] uppercase tracking-[0.06em] text-muted dark:text-[#A4B0BC]">{label}</div>
+      <div className="mt-0.5 font-display text-[22px] font-semibold text-ink dark:text-[#F1E8D6]">{value}</div>
       <div className={`mt-0.5 text-[11px] ${up ? "text-success" : "text-danger"}`}>{delta}</div>
     </div>
   );

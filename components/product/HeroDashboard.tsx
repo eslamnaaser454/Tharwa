@@ -44,7 +44,7 @@ export default function HeroDashboard() {
       {/* Floating badges */}
       <div
         ref={halalRef}
-        className="absolute end-[-24px] top-[14%] z-[2] hidden items-center gap-2.5 rounded-md border border-line bg-white p-[12px_14px] text-[13px] shadow-lg-soft max-[760px]:hidden min-[760px]:flex"
+        className="absolute end-[-24px] top-[14%] z-[2] hidden items-center gap-2.5 rounded-md border border-line bg-white p-[12px_14px] text-[13px] shadow-lg-soft transition-colors duration-300 dark:border-line-dark dark:bg-navy-700 max-[760px]:hidden min-[760px]:flex"
         style={{ animation: "float-slow 6s ease-in-out infinite" }}
         aria-hidden="true"
         data-cursor-hover
@@ -64,7 +64,7 @@ export default function HeroDashboard() {
 
       <div
         ref={zakatRef}
-        className="absolute start-[-32px] top-[36%] z-[2] hidden items-center gap-2.5 rounded-md border border-line bg-white p-[12px_14px] text-[13px] shadow-lg-soft max-[760px]:hidden min-[760px]:flex"
+        className="absolute start-[-32px] top-[36%] z-[2] hidden items-center gap-2.5 rounded-md border border-line bg-white p-[12px_14px] text-[13px] shadow-lg-soft transition-colors duration-300 dark:border-line-dark dark:bg-navy-700 max-[760px]:hidden min-[760px]:flex"
         style={{ animation: "float-slow 6s ease-in-out infinite", animationDelay: "-2s" }}
         aria-hidden="true"
         data-cursor-hover
@@ -94,18 +94,18 @@ export default function HeroDashboard() {
             <span className="h-2.5 w-2.5 rounded-full bg-[#E8D2A2]" />
             <span className="h-2.5 w-2.5 rounded-full bg-[#B6CDB7]" />
           </div>
-          <div className="mx-3.5 flex flex-1 items-center gap-2 rounded-sm border border-line bg-white px-3 py-1.5 font-mono text-[11px] text-muted">
+          <div className="mx-3.5 flex flex-1 items-center gap-2 rounded-sm border border-line bg-white px-3 py-1.5 font-mono text-[11px] text-muted dark:border-line-dark dark:bg-navy-700 dark:text-[#A4B0BC]">
             <svg className="h-2.5 w-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <rect x="5" y="11" width="14" height="9" rx="2" />
               <path d="M8 11V8a4 4 0 1 1 8 0v3" />
             </svg>
             {t("mockUrl")}
           </div>
-          <span className="font-mono text-[11px] text-muted">EN · AR</span>
+          <span className="font-mono text-[11px] text-muted dark:text-[#A4B0BC]">EN · AR</span>
         </div>
 
         {/* Mock body */}
-        <div className="grid grid-cols-2 gap-3.5 rounded-[14px] border border-line bg-white p-5 max-[760px]:grid-cols-1">
+        <div className="grid grid-cols-2 gap-3.5 rounded-[14px] border border-line bg-white p-5 transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)] max-[760px]:grid-cols-1">
           {/* Balance card */}
           <div className="col-span-full rounded-[14px] border border-transparent bg-gradient-to-br from-navy-800 to-navy-700 p-4 text-[#F1E8D6]">
             <div className="flex justify-between">
@@ -150,13 +150,13 @@ export default function HeroDashboard() {
           </div>
 
           {/* Spending chart */}
-          <div className="col-span-full rounded-[14px] border border-line bg-white p-[18px_16px_12px]">
+          <div className="col-span-full rounded-[14px] border border-line bg-white p-[18px_16px_12px] transition-colors duration-300 dark:border-line-dark dark:bg-[rgba(255,255,255,0.025)]">
             <div className="mb-3.5 flex items-end justify-between">
               <div>
-                <div className="text-[11px] uppercase tracking-[0.06em] text-muted">{t("spendingLabel")}</div>
-                <div className="font-display text-lg font-semibold text-ink">{t("spendingValue")}</div>
+                <div className="text-[11px] uppercase tracking-[0.06em] text-muted dark:text-[#A4B0BC]">{t("spendingLabel")}</div>
+                <div className="font-display text-lg font-semibold text-ink dark:text-[#F1E8D6]">{t("spendingValue")}</div>
               </div>
-              <div className="flex gap-0.5 rounded-sm bg-paper-2 p-[3px]">
+              <div className="flex gap-0.5 rounded-sm bg-paper-2 p-[3px] dark:bg-navy-900">
                 {["1W", "1M", "3M", "1Y"].map((tab, i) => (
                   <span
                     key={tab}
